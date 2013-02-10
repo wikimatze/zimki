@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name                  = 'zimki'
-  s.version               = '0.0.1'
-  s.date                  = '2011-10-30'
+  s.version               = '0.0.2'
+  s.date                  = '2013-02-10'
 
   s.summary               = 'Converts files written in the zim Desktop format to textile.'
   s.description           = 'Zimki converts file written in the zim Desktop Wiki format and converts them to textile.'
