@@ -2,7 +2,6 @@ require 'fileutils'
 
 class Zimki
 
-
   def remove_content_type_textile(text)
     show_regexp(text, /Content-Type:([A-Za-z0-9\/:<>!?_\s-]*)/, "content_type")
   end
@@ -112,8 +111,6 @@ class Zimki
       text << apply_textile_conversion_rules(line)
     end
 
-    puts text
-
     replace_leading_newlines(text)
   end
 
@@ -153,7 +150,6 @@ class Zimki
   def show_regexp(string, pattern, type)
     match = string.match(pattern)
     if match
-#       puts "#{match.pre_match}->#{match[0]}<-#{match.post_match}"
       if type == "link"
        matching_string = match[0]
        if !matching_string.include?("[[")
@@ -197,13 +193,3 @@ class Zimki
   end
 end
 
-# puts Zimki.new.show_regexp(test, /\[\[http[A-Za-z0-9.-:]*\|[A-Za-z.]*\]\]|http[A-Za-z0-9.-:]*/, "link")
-# file = File.join("..", "spec", "source", "notes.txt")
-# filedst = File.join("..", "spec", "source", "dst.txt")
-# filesrc = File.join("..", "spec", "source", "src.txt")
-# a = Zimki.new
-# a.textile_conversion(file)
-# file = File.join("../", "2010.txt")
-# puts file
-# a = Zimki.new
-# a.textile_conversion(file)
