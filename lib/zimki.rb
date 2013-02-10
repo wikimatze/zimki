@@ -2,6 +2,7 @@ require 'fileutils'
 
 class Zimki
 
+
   def remove_content_type_textile(text)
     show_regexp(text, /Content-Type:([A-Za-z0-9\/:<>!?_\s-]*)/, "content_type")
   end
