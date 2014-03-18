@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description           = 'Zimki converts file written in the zim Desktop Wiki format and converts them to textile.'
 
   s.authors               = ["Matthias Guenther"]
-  s.email                 = 'matthias.guenther@wikimatze.de'
+  s.email                 = 'matthias@wikimatze.de'
   s.homepage              = 'https://github.com/matthias-guenther/zimki'
 
   s.required_ruby_version = '>= 1.8.7'
